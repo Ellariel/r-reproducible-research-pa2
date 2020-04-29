@@ -6,8 +6,12 @@ output:
 ---
 
 ## Synopsis
-In this analysis, we are trying to answer the following questions:
+In this analysis, we are trying to answer the following questions, based on weather events in USA from 1950-2011:
+
+
 1. Across the United States, which types of events are most harmful with respect to population health?
+
+
 2. Across the United States, which types of events have the greatest economic consequences?
 
 
@@ -123,7 +127,10 @@ head(i, n = 10)
 ## 212              HAIL     1361
 ```
 
-Let's see this on plot:
+
+Let's see this on plot. There are the impact of top-10 weather events in USA from 1950-2011.
+
+
 
 
 ```r
@@ -141,6 +148,7 @@ barplot(height=i10$INJURIES, names=tolower(i10$EVTYPE), col=factor(i10$EVTYPE), 
 ```
 
 ![](pa2_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+
 
 According to the second question, let's see how total damage distributed by event type. 
 Top-10 are:
@@ -184,7 +192,7 @@ barplot(height=p10$PROPDMG, names=tolower(p10$EVTYPE), col=factor(p10$EVTYPE), h
 
 ![](pa2_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
-Now, let's see on top-5 average values:
+Now, let's see on top-5 average values. There are the impact of top-5 weather events in USA from 1950-2011.
 
 
 ```r
@@ -264,3 +272,5 @@ This context may be very different by States.
 You may access that puplication on my [RPubs](https://rpubs.com/Ellariel/noaa)
 
 
+
+.
