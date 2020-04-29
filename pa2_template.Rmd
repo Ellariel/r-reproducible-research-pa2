@@ -6,8 +6,12 @@ output:
 ---
 
 ## Synopsis
-In this analysis, we are trying to answer the following questions:
+In this analysis, we are trying to answer the following questions, based on weather events in USA from 1950-2011:
+
+
 1. Across the United States, which types of events are most harmful with respect to population health?
+
+
 2. Across the United States, which types of events have the greatest economic consequences?
 
 
@@ -83,7 +87,10 @@ head(i, n = 10)
 
 ```
 
-Let's see this on plot:
+
+Let's see this on plot. There are the impact of top-10 weather events in USA from 1950-2011.
+
+
 
 ```{r}
 f10<-head(f, n = 10)
@@ -98,7 +105,9 @@ barplot(height=f10$FATALITIES, names=tolower(f10$EVTYPE), col=factor(f10$EVTYPE)
 
 barplot(height=i10$INJURIES, names=tolower(i10$EVTYPE), col=factor(i10$EVTYPE), horiz=T, las=1, main = "Total injuries")
 
+
 ```
+
 
 According to the second question, let's see how total damage distributed by event type. 
 Top-10 are:
@@ -126,7 +135,7 @@ barplot(height=p10$PROPDMG, names=tolower(p10$EVTYPE), col=factor(p10$EVTYPE), h
 
 ```
 
-Now, let's see on top-5 average values:
+Now, let's see on top-5 average values. There are the impact of top-5 weather events in USA from 1950-2011.
 
 ```{r, cahe=TRUE}
 f<-aggregate(FATALITIES ~ EVTYPE, data, mean)
@@ -169,3 +178,5 @@ This context may be very different by States.
 You may access that puplication on my [RPubs](https://rpubs.com/Ellariel/noaa)
 
 
+
+.
