@@ -5,6 +5,15 @@ output:
     keep_md: true
 ---
 
+## Synopsis
+In this analysis, we are trying to answer the following questions:
+1. Across the United States, which types of events are most harmful with respect to population health?
+2. Across the United States, which types of events have the greatest economic consequences?
+
+
+So we conclude that:
+According to population health, tornados resulted in the most impact on event fatality, injury (by total number of cases). As for economic consequences, flooding appeared to have the most impact.
+
 ## Introduction
 
 Storms and other severe weather events can cause both public health and economic problems for communities and municipalities. Many severe events can result in fatalities, injuries, and property damage, and preventing such outcomes to the extent possible is a key concern.
